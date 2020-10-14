@@ -31,7 +31,7 @@ $(document).ready(function(){
     words.forEach(function(word, i){
       html += "<tr>";
       html += `<th class="align-middle" scope=\"row\">${i+1}</th>`;
-      html += `<td><input type="text" class="form-control" placeholder="${word.ukr}" correct="${word.eng}" disabled/></td>`;
+      html += `<td><input type="text" class="form-control" placeholder="${word.ukr}" correct="${word.eng}" spellcheck="false" disabled/></td>`;
       html += `<td class="align-middle"><span>${word.eng}</span></td>`;
       html += "</tr>";
     })
